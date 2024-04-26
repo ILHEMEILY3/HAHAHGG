@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Sentiment analysis on social networks in Arabic</title>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Sentiment analysis </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    
+                    <li class="nav__item"><a href="#about" class="nav__link">Get Started</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">تحليل المشاعر على<br><span class="home__title-color">شبكات التواصل الاجتماعي</span><br >باللغة العربية</h1>
+
+                <a href="#" class="button" id="scrollButton">إبدأ</a>
+            </div>
+
+           
+            <div class="blob">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                    <defs> 
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:  #FF9797;"></stop>
+                            
+                          
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#gradient)">
+                        <animate attributeName="d"
+                        dur="10000ms"
+                        repeatCount="indefinite"
+    
+                        values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
+                                M455.5,306Q444,362,400,398Q356,434,303,456.5Q250,479,202,448Q154,417,104,390Q54,363,48.5,306.5Q43,250,52,195.5Q61,141,99.5,98.5Q138,56,194,59.5Q250,63,308,56.5Q366,50,394.5,100Q423,150,445,200Q467,250,455.5,306Z;
+                                M471,306.5Q445,363,401.5,400Q358,437,304,452.5Q250,468,203,440.5Q156,413,100.5,391Q45,369,52.5,309.5Q60,250,73.5,203Q87,156,123,124.5Q159,93,204.5,55.5Q250,18,311,28Q372,38,415,84Q458,130,477.5,190Q497,250,471,306.5Z;
+                                M438,300Q422,350,385.5,386Q349,422,299.5,451Q250,480,193.5,462.5Q137,445,104,399Q71,353,39,301.5Q7,250,37.5,197.5Q68,145,97,89.5Q126,34,188,18.5Q250,3,300,40Q350,77,389,112Q428,147,441,198.5Q454,250,438,300Z;
+                                M459.5,309.5Q456,369,402,394.5Q348,420,299,459Q250,498,198.5,463.5Q147,429,94.5,399.5Q42,370,40,310Q38,250,62.5,203Q87,156,119,117.5Q151,79,200.5,53.5Q250,28,312,31.5Q374,35,394.5,95Q415,155,439,202.5Q463,250,459.5,309.5Z;
+                                M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z"></animate>
+                    </path>
+                </svg>
+            </div>
+            <!-- Adding Glow Effect to blob    -->
+            <div class="blob">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgb(255, 95, 109);"></stop>
+                            <stop offset="100%" style="stop-color: rgb(255, 195, 113);"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#gradient)">
+                        <animate attributeName="d"
+                                 dur="10000ms"
+                                 repeatCount="indefinite"
+    
+                                 values="M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z;
+                                M455.5,306Q444,362,400,398Q356,434,303,456.5Q250,479,202,448Q154,417,104,390Q54,363,48.5,306.5Q43,250,52,195.5Q61,141,99.5,98.5Q138,56,194,59.5Q250,63,308,56.5Q366,50,394.5,100Q423,150,445,200Q467,250,455.5,306Z;
+                                M471,306.5Q445,363,401.5,400Q358,437,304,452.5Q250,468,203,440.5Q156,413,100.5,391Q45,369,52.5,309.5Q60,250,73.5,203Q87,156,123,124.5Q159,93,204.5,55.5Q250,18,311,28Q372,38,415,84Q458,130,477.5,190Q497,250,471,306.5Z;
+                                M438,300Q422,350,385.5,386Q349,422,299.5,451Q250,480,193.5,462.5Q137,445,104,399Q71,353,39,301.5Q7,250,37.5,197.5Q68,145,97,89.5Q126,34,188,18.5Q250,3,300,40Q350,77,389,112Q428,147,441,198.5Q454,250,438,300Z;
+                                M459.5,309.5Q456,369,402,394.5Q348,420,299,459Q250,498,198.5,463.5Q147,429,94.5,399.5Q42,370,40,310Q38,250,62.5,203Q87,156,119,117.5Q151,79,200.5,53.5Q250,28,312,31.5Q374,35,394.5,95Q415,155,439,202.5Q463,250,459.5,309.5Z;
+                                M451.5,299Q420,348,383.5,383Q347,418,298.5,441.5Q250,465,198,447.5Q146,430,111,390Q76,350,44.5,300Q13,250,47.5,201.5Q82,153,111.5,107.5Q141,62,195.5,57Q250,52,297,69.5Q344,87,392.5,113.5Q441,140,462,195Q483,250,451.5,299Z"></animate>
+                    </path>
+                </svg>
+                <img src="three.png" alt="Picture Emoji" class="emoji emoji2">
+                <img src="two.png" alt="Picture Emoji" class="emoji emoji1">
+                <img src="one.png" alt="Picture Emoji" class="emoji emoji3">
+               
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="AN.png" alt="">
+                </div>
+                    
+                <div class="about__form">
+
+
+                    <header class="center-align">تحليل المشاعر</header>
+                    <form action="#" class="form">
+                      
+    
+                      <div class="input-box right-align">
+                        <label>تحليل مشاعر تغريدات الريديت</label>
+                        <input type="text" placeholder="أدخل جملة" required />
+                        
+                            <div class="select-box">
+                              <select>
+                                <option hidden>عدد التغريدات</option>
+                                <option>5</option>
+                                <option>8</option>
+                                <option>10</option>
+                                <option>20</option>
+                              </select>
+                            </div>
+                            <button>تنبأ</button>
+                      
+                      <div class="input-box  right-align">
+                        <label>تحليل مشاعر جملة</label>
+                        <input type="text" placeholder="أدخل جملة" required />
+                        
+                          
+                        </div>
+                        
+                      </div>
+                      <button>تنبأ</button>
+                    </form>
+                    
+                </div>                                   
+            </div>
+        </section>
+
+        
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Sentiment analysis </p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; SDIA STUDENT. All rights reserved</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="script.js"></script>
+</body>
+</html>
